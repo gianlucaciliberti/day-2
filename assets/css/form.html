@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>FORM</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Tabelle</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <form method="get" action="grazie.html">
+            <label for="name">NOME COMPLETO</label>
+            <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome completo" required/>
+            <label for="address">INDIRIZZO</label>
+            <input type="text" id="address" name="address" placeholder="Inserisci il tuo indirizzo" />
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required/>
+            <label for="username">USERNAME</label>
+            <input type="text" id="username" name="username" placeholder="Scegli un username" required/>
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password" placeholder="Scegli una password" required/>
+            <label for="joinDate">DATA DI ISCRIZIONE</label>
+            <input type="date" id="joinDate" name="joinDate"/>
+            <p>&nbsp;</p>
+            <button type="submit" id="sendForm">INVIA</button>
+            <button type="reset" id="clearForm">PULISCI</button>
+        </form>
+
+    </body>
+</html>
