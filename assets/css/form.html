@@ -18,19 +18,48 @@
         </header>
 
         <form method="get" action="grazie.html">
+            <!--campi di input-->
             <label for="name">NOME COMPLETO</label>
             <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome completo" required/>
             <label for="address">INDIRIZZO</label>
-            <input type="text" id="address" name="address" placeholder="Inserisci il tuo indirizzo" />
+            <input type="text" id="address" name="address" placeholder="Inserisci il tuo indirizzo" /><br />
             <label for="email">EMAIL</label>
             <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required/>
             <label for="username">USERNAME</label>
-            <input type="text" id="username" name="username" placeholder="Scegli un username" required/>
+            <input type="text" id="username" name="username" placeholder="Scegli un username" required/><br />
             <label for="password">PASSWORD</label>
             <input type="password" id="password" name="password" placeholder="Scegli una password" required/>
             <label for="joinDate">DATA DI ISCRIZIONE</label>
             <input type="date" id="joinDate" name="joinDate"/>
+            <label for="frequency"><h4>Scegli la frequenza</h4></label>
+            <!--select-->
+            <select id="frequency" name="frequency">
+                <option value="FT">Full Time</option>
+                <option value="PT">Part Time</option>
+                <option value="SR">Serale</option>
+            </select><br /><br />
             <p>&nbsp;</p>
+            <!--textarea-->
+            <label for="message">Inviaci un messaggio</label>
+            <textarea id="message" name="message" rows="3" cols="50" placeholder="Scrivi il tuo messaggio qui..."></textarea><br /><br />
+            <!--checbox e radio button-->
+            <h4>Seleziona le tue preferenze</h4>
+            <input type="checkbox" id="html" name="html" value="HTML">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="css" value="CSS">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="js" name="js" value="JavaScript">
+            <label for="js">JavaScript</label>
+            <input type="checkbox" id="java" name="java" value="Java">
+            <label for="java">Java</label><br /><br />
+            
+            <h4>Seleziona il tuo corso</h4>
+            <input type="radio" id="FullStack" name="coursetype" value="FullStack">
+            <label for="FullStack">Full Stack</label><br />
+            <input type="radio" id="FrontEnd" name="coursetype" value="FrontEnd">
+            <label for="FrontEnd">Front End</label><br />
+            <input type="radio" id="BackEnd" name="coursetype" value="BackEnd">
+            <label for="BackEnd">Back End</label><br /><br />
             <button type="submit" id="sendForm">INVIA</button>
             <button type="reset" id="clearForm">PULISCI</button>
         </form>
